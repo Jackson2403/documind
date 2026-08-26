@@ -1,0 +1,29 @@
+[package]
+name = "documind"
+version = "0.1.0"
+description = "Search and understand your documents offline with local AI."
+authors = ["DocuMind"]
+edition = "2021"
+
+[lib]
+name = "documind"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
+chrono = "0.4"
+walkdir = "2"
+dirs = "5"
+pdf-extract = "0.7"
+thiserror = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "blocking"] }
+tokio = { version = "1", features = ["rt", "sync"] }

@@ -1,0 +1,117 @@
+/* ============================================================
+   DocuMind Design System — CSS custom properties
+   Theme is driven by the `data-theme` attribute on <html>,
+   set from App.tsx (light | dark). Components read these
+   variables so dark mode works globally without rework.
+   ============================================================ */
+
+:root {
+  /* Fonts & base */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08),
+    0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.16);
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.12s;
+  --dur-med: 0.2s;
+  --dur-slow: 0.3s;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+}
+
+/* ---------- LIGHT THEME (default) ---------- */
+:root,
+:root[data-theme="light"] {
+  --bg: #f5f6fa;
+  --bg-elevated: #ffffff;
+  --bg-subtle: #eef0f6;
+  --bg-hover: #f1f3f9;
+
+  --text: #1a1f36;
+  --text-secondary: #4b5563;
+  --text-muted: #8a94a6;
+
+  --border: #e4e7ef;
+  --border-strong: #d3d8e3;
+
+  --brand: #6366f1;
+  --brand-strong: #4f46e5;
+  --brand-soft: #eef2ff;
+  --brand-contrast: #ffffff;
+
+  --accent-violet: #8b5cf6;
+  --accent-cyan: #06b6d4;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --danger-border: #fecaca;
+
+  --sidebar-bg: #111827;
+  --sidebar-text: #d1d5db;
+  --sidebar-text-muted: #6b7280;
+  --sidebar-active-bg: rgba(99, 102, 241, 0.18);
+  --sidebar-active-text: #a5b4fc;
+}
+
+/* ---------- DARK THEME ---------- */
+:root[data-theme="dark"] {
+  --bg: #0f1320;
+  --bg-elevated: #1a2032;
+  --bg-subtle: #1c2335;
+  --bg-hover: #232b42;
+
+  --text: #e8eaf2;
+  --text-secondary: #b4bccd;
+  --text-muted: #76839a;
+
+  --border: #2a3145;
+  --border-strong: #37405a;
+
+  --brand: #818cf8;
+  --brand-strong: #6366f1;
+  --brand-soft: #232b4a;
+  --brand-contrast: #0f1320;
+
+  --accent-violet: #a78bfa;
+  --accent-cyan: #22d3ee;
+  --accent-green: #34d399;
+  --accent-amber: #fbbf24;
+  --accent-rose: #fb7185;
+
+  --danger: #f87171;
+  --danger-soft: #2a1a22;
+  --danger-border: #4a2530;
+
+  --sidebar-bg: #0b0e18;
+  --sidebar-text: #cbd5e1;
+  --sidebar-text-muted: #64748b;
+  --sidebar-active-bg: rgba(99, 102, 241, 0.22);
+  --sidebar-active-text: #c7d2fe;
+}
