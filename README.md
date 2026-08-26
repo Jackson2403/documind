@@ -18,8 +18,7 @@
 
 <br />
 
-https://github.com/user-attachments/assets/00000000-0000-0000-0000-000000000000  
-<!-- Replace the URL above with a real screenshot or screen recording once available -->
+![DocuMind screenshot](./docs/screenshot.png)
 
 </div>
 
